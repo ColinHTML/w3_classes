@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Calculator</title>
+</head>
+<body>
+    <script>
+        var hourlyRate=prompt("Enter your salary");
+        var hoursWorked=prompt("Enter your hours worked");
+        var taxRate=prompt("Enter the tax rate");
+        var grossPay = hourlyRate * hoursWorked
+        var taxAmount = grossPay * taxRate
+        var netPay = grossPay - taxAmount
+        console.log(`Money made per week: ${grossPay}`)
+        console.log(`Amount removed by taxes: ${taxAmount}`)
+        console.log(`Amount after taxes: ${netPay}`)
+        document.write("<br>Money made per week:\t" +grossPay)
+        document.write("<br>Amount removed by taxes:\t"+taxAmount)
+        document.write("<br>Amount after taxes:\t"+netPay)
+        alert("Money made per week:" + " " + grossPay + " " + "Amount removed by taxes:" + " " + taxAmount + " "+ "Amount after taxes:" + " " + netPay)
+    </script>
+</body>
+</html>
